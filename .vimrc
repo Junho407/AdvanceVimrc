@@ -38,8 +38,8 @@ Plug 'sickill/vim-monokai'↵
 Plug 'skielbasa/vim-material-monokai'↵
 Plug 'morhetz/gruvbox'↵
 Plug 'altercation/vim-colors-solarized'↵
-↵
 call plug#end()↵
+
 filetype plugin indent on    "required↵
 ↵
 function! RunShell(Msg, Shell)↵
@@ -58,56 +58,6 @@ nnoremap <Leader>q :q!<CR>
 nnoremap <Leader>s :w<CR>
 " ,x - Close all documents and terminate VIM 
 nnoremap <Leader>x :qall<CR>
-syntax on          " Enable keyword color↵
-syntax enable      " Enable syntax color↵
-filetype off       "required↵
-↵
-call plug#begin('~/.vim/plugged')↵
-"Plugin 'gnattishness/cscope_maps'↵
-" Git tool↵
-Plug 'tpope/vim-fugitive'↵
-Plug 'gregsexton/gitv'↵
-" 加入 NERDTree Tabs 套件 "↵
-Plug 'scrooloose/nerdtree'↵
-Plug 'Xuyuanp/nerdtree-git-plugin'↵
-" 加入 NERDTree Tabs 套件 "↵
-Plug 'jistr/vim-nerdtree-tabs'↵
-Plug 'majutsushi/tagbar'↵
-Plug 'tracyone/vinux'↵
-Plug 'vim-airline/vim-airline'↵
-Plug 'vim-airline/vim-airline-themes'↵
-Plug 'vim-scripts/Mark--Karkat'↵
-Plug 'kshenoy/vim-signature'↵
-" LeaderF↵
-Plug 'Yggdroot/LeaderF'↵
-↵
-Plug 'ludovicchabant/vim-gutentags'↵
-Plug 'skywind3000/gutentags_plus'↵
-Plug 'skywind3000/vim-preview'↵
-" GNU GLOBAL↵
-Plug 'vim-scripts/gtags.vim'↵
-" Super tab↵
-Plug 'ervandew/supertab'↵
-" You complete me↵
-Plug 'Valloric/YouCompleteMe'↵
-" Work with serveral variants of a word at once.↵
-Plug 'tpope/vim-abolish'↵
-" Colorscheme↵
-Plug 'NLKNguyen/papercolor-theme'↵
-Plug 'sickill/vim-monokai'↵
-Plug 'skielbasa/vim-material-monokai'↵
-Plug 'morhetz/gruvbox'↵
-Plug 'altercation/vim-colors-solarized'↵
-↵
-call plug#end()↵
-filetype plugin indent on    "required↵
-↵
-function! RunShell(Msg, Shell)↵
-    echo a:Msg.'...'↵
-    call system(a:Shell)↵
-    echo 'done'↵
-endfunction↵
-
 
 "  Nerdtree ---------------------------------------------------{{{2
 nmap <F2> :NERDTreeToggle<CR>
