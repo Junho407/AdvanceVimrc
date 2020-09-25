@@ -54,7 +54,7 @@ if executable('ag')
 endif
 
 " Highlight search key word for ag
-let g:ackhighllight = 1
+let g:ackhighlight = 1
 " Nerdtree -----------------------------------------------------{{{2
 nnoremap <F6> :NERDTreeToggle<CR>
 let NERDTreeShowLineNumbers=0
