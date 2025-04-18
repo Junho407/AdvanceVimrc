@@ -1,10 +1,10 @@
-syntax enable      " Enable syntax color↵
-filetype off       "required↵
+syntax enable      " Enable syntax color
+filetype off       "required
 call plug#begin('~/.vim/plugged')
-" NERD tree will be loaded on the first invocation of NERDTreeToggle command↵
+" NERD tree will be loaded on the first invocation of NERDTreeToggle command
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
-" 加入 NERDTree Tabs 套件 "↵
+" 加入 NERDTree Tabs 套件 "
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'majutsushi/tagbar'
 Plug 'altercation/vim-colors-solarized'
